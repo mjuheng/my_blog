@@ -1,0 +1,237 @@
+2019-07-22 09:06:50.165  INFO 4296 --- [main] com.heng.BadblogApplicationTests         : Starting BadblogApplicationTests on XZ-201707211857 with PID 4296 (started by Administrator in F:\Intel\BadBlog.git\trunk)
+2019-07-22 09:06:50.171  INFO 4296 --- [main] com.heng.BadblogApplicationTests         : No active profile set, falling back to default profiles: default
+2019-07-22 09:06:53.420  INFO 4296 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@212b5695: startup date [Mon Jul 22 09:06:53 CST 2019]; root of context hierarchy
+2019-07-22 09:07:03.105  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@212b5695: startup date [Mon Jul 22 09:06:53 CST 2019]; root of context hierarchy
+2019-07-22 09:07:03.419  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/article/update],methods=[POST]}" onto public java.lang.String com.heng.controller.ArticleController.update(java.lang.Integer,java.lang.String,java.lang.Integer[],java.lang.String,java.lang.String,org.springframework.ui.Model)
+2019-07-22 09:07:03.420  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/create]}" onto public java.lang.String com.heng.controller.ArticleController.create(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2019-07-22 09:07:03.421  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/article/publish]}" onto public java.lang.String com.heng.controller.ArticleController.publish(java.lang.String,java.lang.Integer[],java.lang.String,java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2019-07-22 09:07:03.422  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/edit]}" onto public java.lang.String com.heng.controller.ArticleController.edit(java.lang.Integer,org.springframework.ui.Model,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2019-07-22 09:07:03.422  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/article/delete]}" onto public java.lang.String com.heng.controller.ArticleController.deleteArticle(java.lang.Integer[],javax.servlet.http.HttpSession)
+2019-07-22 09:07:03.423  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/article/display/{aid}]}" onto public java.lang.String com.heng.controller.ArticleController.display(java.lang.Integer,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2019-07-22 09:07:03.423  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/article/archive]}" onto public java.lang.String com.heng.controller.ArticleController.archive(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2019-07-22 09:07:03.424  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/article/addView]}" onto public void com.heng.controller.ArticleController.addView(java.util.HashMap<java.lang.String, java.lang.Object>)
+2019-07-22 09:07:03.427  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/category/all]}" onto public java.lang.String com.heng.controller.CategoryController.all(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2019-07-22 09:07:03.427  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/category/edit]}" onto public java.lang.String com.heng.controller.CategoryController.editCategory(java.lang.Integer,java.lang.String,javax.servlet.http.HttpSession)
+2019-07-22 09:07:03.428  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/category/edit/{cid}]}" onto public java.lang.String com.heng.controller.CategoryController.editCategory(java.lang.Integer,org.springframework.ui.Model)
+2019-07-22 09:07:03.428  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/category/insert],methods=[POST]}" onto public java.lang.String com.heng.controller.CategoryController.insertCategory(java.lang.String,javax.servlet.http.HttpSession)
+2019-07-22 09:07:03.429  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/category/exist/{category}]}" onto public java.util.List<com.heng.entity.Category> com.heng.controller.CategoryController.existCategory(java.lang.String,javax.servlet.http.HttpSession)
+2019-07-22 09:07:03.429  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/category/delete]}" onto public java.lang.String com.heng.controller.CategoryController.deleteCategories(java.lang.Integer[],javax.servlet.http.HttpSession)
+2019-07-22 09:07:03.432  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/err]}" onto public java.lang.String com.heng.controller.HomeController.error()
+2019-07-22 09:07:03.432  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search]}" onto public java.lang.String com.heng.controller.HomeController.search(java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2019-07-22 09:07:03.433  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ || /home]}" onto public java.lang.String com.heng.controller.HomeController.home()
+2019-07-22 09:07:03.433  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/p/{currentPage}]}" onto public java.lang.String com.heng.controller.HomeController.mainPage(java.lang.Integer,org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2019-07-22 09:07:03.435  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/article/p/{currentPage}]}" onto public java.lang.String com.heng.controller.ManageController.manageArticleByPage(java.lang.Integer,org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2019-07-22 09:07:03.435  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/category]}" onto public java.lang.String com.heng.controller.ManageController.manageCategory(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2019-07-22 09:07:03.436  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/article]}" onto public java.lang.String com.heng.controller.ManageController.manageArticle(org.springframework.ui.Model)
+2019-07-22 09:07:03.442  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register]}" onto public java.lang.String com.heng.controller.UserController.register()
+2019-07-22 09:07:03.443  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login]}" onto public java.lang.String com.heng.controller.UserController.login()
+2019-07-22 09:07:03.443  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logout]}" onto public java.lang.String com.heng.controller.UserController.logout(javax.servlet.http.HttpSession)
+2019-07-22 09:07:03.443  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/signin],methods=[POST]}" onto public java.lang.String com.heng.controller.UserController.signin(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2019-07-22 09:07:03.444  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/email],methods=[POST]}" onto public java.lang.String com.heng.controller.UserController.sendMail(java.lang.String)
+2019-07-22 09:07:03.444  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/forgetPassword]}" onto public java.lang.String com.heng.controller.UserController.forgetPassword()
+2019-07-22 09:07:03.444  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/checkCode],methods=[POST]}" onto public java.lang.String com.heng.controller.UserController.sendCheckCode(java.lang.String,javax.servlet.http.HttpSession)
+2019-07-22 09:07:03.453  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/findPassword],methods=[POST]}" onto public java.lang.String com.heng.controller.UserController.findPassword(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2019-07-22 09:07:03.453  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/exist],methods=[POST]}" onto public boolean com.heng.controller.UserController.existUsername(java.lang.String)
+2019-07-22 09:07:03.454  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/addUser],methods=[POST]}" onto public java.lang.String com.heng.controller.UserController.signup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2019-07-22 09:07:03.458  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-22 09:07:03.458  INFO 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-22 09:07:03.558  INFO 4296 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-22 09:07:03.559  INFO 4296 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-22 09:07:03.682  INFO 4296 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-22 09:07:05.638  INFO 4296 --- [main] com.heng.BadblogApplicationTests         : Started BadblogApplicationTests in 18.024 seconds (JVM running for 22.391)
+2019-07-22 09:07:05.955  INFO 4296 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@212b5695: startup date [Mon Jul 22 09:06:53 CST 2019]; root of context hierarchy
+2020-06-02 15:55:27.265  INFO 5588 --- [restartedMain] com.heng.BadblogApplication              : Starting BadblogApplication on XZ-201707211857 with PID 5588 (F:\Intel\my_blog\target\classes started by Administrator in F:\Intel\my_blog)
+2020-06-02 15:55:27.267  INFO 5588 --- [restartedMain] com.heng.BadblogApplication              : No active profile set, falling back to default profiles: default
+2020-06-02 15:55:28.434  INFO 5588 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@33c06d05: startup date [Tue Jun 02 15:55:28 CST 2020]; root of context hierarchy
+2020-06-02 15:55:31.349  INFO 5588 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2020-06-02 15:55:31.378  INFO 5588 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-02 15:55:31.379  INFO 5588 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2020-06-02 15:55:31.573  INFO 5588 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-02 15:55:31.573  INFO 5588 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3140 ms
+2020-06-02 15:55:31.704  INFO 5588 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-06-02 15:55:31.738  INFO 5588 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-06-02 15:55:31.739  INFO 5588 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-06-02 15:55:31.739  INFO 5588 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-06-02 15:55:31.739  INFO 5588 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-06-02 15:55:33.044  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@33c06d05: startup date [Tue Jun 02 15:55:28 CST 2020]; root of context hierarchy
+2020-06-02 15:55:33.093  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/article/update],methods=[POST]}" onto public java.lang.String com.heng.controller.ArticleController.update(java.lang.Integer,java.lang.String,java.lang.Integer[],java.lang.String,java.lang.String,org.springframework.ui.Model)
+2020-06-02 15:55:33.094  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/create]}" onto public java.lang.String com.heng.controller.ArticleController.create(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2020-06-02 15:55:33.094  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/edit]}" onto public java.lang.String com.heng.controller.ArticleController.edit(java.lang.Integer,org.springframework.ui.Model,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-06-02 15:55:33.094  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/article/delete]}" onto public java.lang.String com.heng.controller.ArticleController.deleteArticle(java.lang.Integer[],javax.servlet.http.HttpSession)
+2020-06-02 15:55:33.094  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/article/display/{aid}]}" onto public java.lang.String com.heng.controller.ArticleController.display(java.lang.Integer,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-06-02 15:55:33.095  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/article/archive]}" onto public java.lang.String com.heng.controller.ArticleController.archive(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2020-06-02 15:55:33.095  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/article/addView]}" onto public void com.heng.controller.ArticleController.addView(java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-06-02 15:55:33.095  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/article/publish]}" onto public java.lang.String com.heng.controller.ArticleController.publish(java.lang.String,java.lang.Integer[],java.lang.String,java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2020-06-02 15:55:33.097  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/category/all]}" onto public java.lang.String com.heng.controller.CategoryController.all(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2020-06-02 15:55:33.097  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/category/edit]}" onto public java.lang.String com.heng.controller.CategoryController.editCategory(java.lang.Integer,java.lang.String,javax.servlet.http.HttpSession)
+2020-06-02 15:55:33.097  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/category/edit/{cid}]}" onto public java.lang.String com.heng.controller.CategoryController.editCategory(java.lang.Integer,org.springframework.ui.Model)
+2020-06-02 15:55:33.098  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/category/insert],methods=[POST]}" onto public java.lang.String com.heng.controller.CategoryController.insertCategory(java.lang.String,javax.servlet.http.HttpSession)
+2020-06-02 15:55:33.098  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/category/exist/{category}]}" onto public java.util.List<com.heng.entity.Category> com.heng.controller.CategoryController.existCategory(java.lang.String,javax.servlet.http.HttpSession)
+2020-06-02 15:55:33.098  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/category/delete]}" onto public java.lang.String com.heng.controller.CategoryController.deleteCategories(java.lang.Integer[],javax.servlet.http.HttpSession)
+2020-06-02 15:55:33.100  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/err]}" onto public java.lang.String com.heng.controller.HomeController.error()
+2020-06-02 15:55:33.100  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search]}" onto public java.lang.String com.heng.controller.HomeController.search(java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-06-02 15:55:33.101  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ || /home]}" onto public java.lang.String com.heng.controller.HomeController.home()
+2020-06-02 15:55:33.101  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/p/{currentPage}]}" onto public java.lang.String com.heng.controller.HomeController.mainPage(java.lang.Integer,org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2020-06-02 15:55:33.102  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/article/p/{currentPage}]}" onto public java.lang.String com.heng.controller.ManageController.manageArticleByPage(java.lang.Integer,org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2020-06-02 15:55:33.102  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/category]}" onto public java.lang.String com.heng.controller.ManageController.manageCategory(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2020-06-02 15:55:33.102  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/article]}" onto public java.lang.String com.heng.controller.ManageController.manageArticle(org.springframework.ui.Model)
+2020-06-02 15:55:33.104  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register]}" onto public java.lang.String com.heng.controller.UserController.register()
+2020-06-02 15:55:33.105  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login]}" onto public java.lang.String com.heng.controller.UserController.login()
+2020-06-02 15:55:33.105  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/signin],methods=[POST]}" onto public java.lang.String com.heng.controller.UserController.signin(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-06-02 15:55:33.105  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logout]}" onto public java.lang.String com.heng.controller.UserController.logout(javax.servlet.http.HttpSession)
+2020-06-02 15:55:33.106  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/email],methods=[POST]}" onto public java.lang.String com.heng.controller.UserController.sendMail(java.lang.String)
+2020-06-02 15:55:33.106  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/forgetPassword]}" onto public java.lang.String com.heng.controller.UserController.forgetPassword()
+2020-06-02 15:55:33.106  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/checkCode],methods=[POST]}" onto public java.lang.String com.heng.controller.UserController.sendCheckCode(java.lang.String,javax.servlet.http.HttpSession)
+2020-06-02 15:55:33.107  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/findPassword],methods=[POST]}" onto public java.lang.String com.heng.controller.UserController.findPassword(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-06-02 15:55:33.107  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/exist],methods=[POST]}" onto public boolean com.heng.controller.UserController.existUsername(java.lang.String)
+2020-06-02 15:55:33.107  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/addUser],methods=[POST]}" onto public java.lang.String com.heng.controller.UserController.signup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-06-02 15:55:33.109  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-06-02 15:55:33.110  INFO 5588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-06-02 15:55:33.131  INFO 5588 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-02 15:55:33.132  INFO 5588 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-02 15:55:33.160  INFO 5588 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-02 15:55:34.028  INFO 5588 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-02 15:55:34.116  INFO 5588 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-06-02 15:55:34.238  INFO 5588 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2020-06-02 15:55:34.256  INFO 5588 --- [restartedMain] com.heng.BadblogApplication              : Started BadblogApplication in 8.602 seconds (JVM running for 10.042)
+2020-06-02 15:55:48.942  INFO 5588 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-06-02 15:55:48.943  INFO 5588 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-06-02 15:55:48.984  INFO 5588 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
+2020-06-02 15:55:49.409 DEBUG 5588 --- [http-nio-8081-exec-1] c.h.mapper.HistoryMapper.getAllHistory   : ==>  Preparing: SELECT `hid` ,`ip`,`location`,`uid`,`description`,`gmt_record` FROM `history` 
+2020-06-02 15:55:49.424 DEBUG 5588 --- [http-nio-8081-exec-1] c.h.mapper.HistoryMapper.getAllHistory   : ==> Parameters: 
+2020-06-02 15:55:49.595 DEBUG 5588 --- [http-nio-8081-exec-1] c.h.mapper.HistoryMapper.getAllHistory   : <==      Total: 1831
+2020-06-02 15:55:49.611 DEBUG 5588 --- [http-nio-8081-exec-1] c.h.mapper.HistoryMapper.insertHistory   : ==>  Preparing: INSERT INTO `history`(`ip`,`location`,`uid`,`description`,`gmt_record`) VALUES (?, ?,?,?,NOW()) 
+2020-06-02 15:55:49.612 DEBUG 5588 --- [http-nio-8081-exec-1] c.h.mapper.HistoryMapper.insertHistory   : ==> Parameters: 127.0.0.1(String), ["本机地址","本机地址","","",""](String), null, /(String)
+2020-06-02 15:55:49.645 DEBUG 5588 --- [http-nio-8081-exec-1] c.h.mapper.HistoryMapper.insertHistory   : <==    Updates: 1
+2020-06-02 15:55:49.685 DEBUG 5588 --- [http-nio-8081-exec-1] c.h.mapper.HistoryMapper.insertHistory   : ==>  Preparing: INSERT INTO `history`(`ip`,`location`,`uid`,`description`,`gmt_record`) VALUES (?, ?,?,?,NOW()) 
+2020-06-02 15:55:49.686 DEBUG 5588 --- [http-nio-8081-exec-1] c.h.mapper.HistoryMapper.insertHistory   : ==> Parameters: 127.0.0.1(String), ["本机地址","本机地址","","",""](String), null, /p/1(String)
+2020-06-02 15:55:49.711 DEBUG 5588 --- [http-nio-8081-exec-1] c.h.mapper.HistoryMapper.insertHistory   : <==    Updates: 1
+2020-06-02 15:55:49.718 DEBUG 5588 --- [http-nio-8081-exec-1] c.heng.mapper.ArticleMapper.listArticle  : ==>  Preparing: SELECT `aid`,`uid`,`title`,`markdown`,`html`,`gmt_post`,`view` FROM `article` ORDER BY `gmt_post` DESC 
+2020-06-02 15:55:49.718 DEBUG 5588 --- [http-nio-8081-exec-1] c.heng.mapper.ArticleMapper.listArticle  : ==> Parameters: 
+2020-06-02 15:55:49.878 DEBUG 5588 --- [http-nio-8081-exec-1] c.heng.mapper.ArticleMapper.listArticle  : <==      Total: 47
+2020-06-02 15:55:49.883 DEBUG 5588 --- [http-nio-8081-exec-1] c.h.m.ArticleMapper.listArticleByPage    : ==>  Preparing: SELECT `aid`,`uid`,`title`,`markdown`,`html`,`gmt_post`,`view` FROM `article` ORDER BY `gmt_post` DESC LIMIT ?,? 
+2020-06-02 15:55:49.883 DEBUG 5588 --- [http-nio-8081-exec-1] c.h.m.ArticleMapper.listArticleByPage    : ==> Parameters: 0(Integer), 5(Integer)
+2020-06-02 15:55:49.886 DEBUG 5588 --- [http-nio-8081-exec-1] c.h.m.ArticleMapper.listArticleByPage    : <==      Total: 5
+2020-06-02 15:55:49.892 DEBUG 5588 --- [http-nio-8081-exec-1] com.heng.mapper.ArticleMapper.viewMost   : ==>  Preparing: SELECT `aid`,`uid`,`title`,`markdown`,`html`,`gmt_post`,`view` FROM `article` ORDER BY `view` DESC LIMIT ? 
+2020-06-02 15:55:49.893 DEBUG 5588 --- [http-nio-8081-exec-1] com.heng.mapper.ArticleMapper.viewMost   : ==> Parameters: 5(Integer)
+2020-06-02 15:55:49.897 DEBUG 5588 --- [http-nio-8081-exec-1] com.heng.mapper.ArticleMapper.viewMost   : <==      Total: 5
+2020-06-02 15:55:55.434 DEBUG 5588 --- [http-nio-8081-exec-8] c.h.mapper.HistoryMapper.insertHistory   : ==>  Preparing: INSERT INTO `history`(`ip`,`location`,`uid`,`description`,`gmt_record`) VALUES (?, ?,?,?,NOW()) 
+2020-06-02 15:55:55.435 DEBUG 5588 --- [http-nio-8081-exec-8] c.h.mapper.HistoryMapper.insertHistory   : ==> Parameters: 127.0.0.1(String), ["本机地址","本机地址","","",""](String), null, /article/addView(String)
+2020-06-02 15:55:55.446 DEBUG 5588 --- [http-nio-8081-exec-4] c.h.mapper.HistoryMapper.insertHistory   : ==>  Preparing: INSERT INTO `history`(`ip`,`location`,`uid`,`description`,`gmt_record`) VALUES (?, ?,?,?,NOW()) 
+2020-06-02 15:55:55.447 DEBUG 5588 --- [http-nio-8081-exec-4] c.h.mapper.HistoryMapper.insertHistory   : ==> Parameters: 127.0.0.1(String), ["本机地址","本机地址","","",""](String), null, /article/display/128(String)
+2020-06-02 15:55:55.500 DEBUG 5588 --- [http-nio-8081-exec-8] c.h.mapper.HistoryMapper.insertHistory   : <==    Updates: 1
+2020-06-02 15:55:55.522 DEBUG 5588 --- [http-nio-8081-exec-4] c.h.mapper.HistoryMapper.insertHistory   : <==    Updates: 1
+2020-06-02 15:55:55.542 DEBUG 5588 --- [http-nio-8081-exec-4] c.h.m.ArticleMapper.getArticleByAid      : ==>  Preparing: SELECT `aid`,`uid`,`title`,`markdown`,`html`,`gmt_post`,`view` FROM `article` WHERE `aid` = ? 
+2020-06-02 15:55:55.542 DEBUG 5588 --- [http-nio-8081-exec-4] c.h.m.ArticleMapper.getArticleByAid      : ==> Parameters: 128(Integer)
+2020-06-02 15:55:55.544 DEBUG 5588 --- [http-nio-8081-exec-4] c.h.m.ArticleMapper.getArticleByAid      : <==      Total: 1
+2020-06-02 15:55:55.545 DEBUG 5588 --- [http-nio-8081-exec-4] c.h.mapper.CategoryMapper.listCategory   : ==>  Preparing: SELECT `cid`,`uid`,`category`,`gmt_create` FROM `category` 
+2020-06-02 15:55:55.545 DEBUG 5588 --- [http-nio-8081-exec-4] c.h.mapper.CategoryMapper.listCategory   : ==> Parameters: 
+2020-06-02 15:55:55.648 DEBUG 5588 --- [http-nio-8081-exec-4] c.h.mapper.CategoryMapper.listCategory   : <==      Total: 12
+2020-06-02 15:55:55.649 DEBUG 5588 --- [http-nio-8081-exec-4] c.h.m.AssociationMapper.listCidByAid     : ==>  Preparing: SELECT `cid` FROM `association` WHERE `aid` = ? 
+2020-06-02 15:55:55.649 DEBUG 5588 --- [http-nio-8081-exec-4] c.h.m.AssociationMapper.listCidByAid     : ==> Parameters: 128(Integer)
+2020-06-02 15:55:55.743 DEBUG 5588 --- [http-nio-8081-exec-4] c.h.m.AssociationMapper.listCidByAid     : <==      Total: 1
+2020-06-02 15:55:55.875 DEBUG 5588 --- [http-nio-8081-exec-8] c.heng.mapper.ArticleMapper.updateView   : ==>  Preparing: UPDATE `article` SET `view` = `view` + ? WHERE `aid` = ? 
+2020-06-02 15:55:55.876 DEBUG 5588 --- [http-nio-8081-exec-8] c.heng.mapper.ArticleMapper.updateView   : ==> Parameters: 1(Integer), 128(Integer)
+2020-06-02 15:55:55.911 DEBUG 5588 --- [http-nio-8081-exec-8] c.heng.mapper.ArticleMapper.updateView   : <==    Updates: 1
+2020-06-02 15:55:55.963 DEBUG 5588 --- [http-nio-8081-exec-4] c.h.m.CategoryMapper.listCategoryByCid   : ==>  Preparing: SELECT `cid`,`uid`,`category`,`gmt_create` FROM `category` WHERE `cid` IN ( ? ) 
+2020-06-02 15:55:55.964 DEBUG 5588 --- [http-nio-8081-exec-4] c.h.m.CategoryMapper.listCategoryByCid   : ==> Parameters: 22(Integer)
+2020-06-02 15:55:55.965 DEBUG 5588 --- [http-nio-8081-exec-4] c.h.m.CategoryMapper.listCategoryByCid   : <==      Total: 1
+2020-06-02 15:55:55.965 DEBUG 5588 --- [http-nio-8081-exec-4] com.heng.mapper.ArticleMapper.viewMost   : ==>  Preparing: SELECT `aid`,`uid`,`title`,`markdown`,`html`,`gmt_post`,`view` FROM `article` ORDER BY `view` DESC LIMIT ? 
+2020-06-02 15:55:55.966 DEBUG 5588 --- [http-nio-8081-exec-4] com.heng.mapper.ArticleMapper.viewMost   : ==> Parameters: 5(Integer)
+2020-06-02 15:55:55.967 DEBUG 5588 --- [http-nio-8081-exec-4] com.heng.mapper.ArticleMapper.viewMost   : <==      Total: 5
+2020-06-02 15:56:00.333 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.mapper.HistoryMapper.insertHistory   : ==>  Preparing: INSERT INTO `history`(`ip`,`location`,`uid`,`description`,`gmt_record`) VALUES (?, ?,?,?,NOW()) 
+2020-06-02 15:56:00.334 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.mapper.HistoryMapper.insertHistory   : ==> Parameters: 127.0.0.1(String), ["本机地址","本机地址","","",""](String), null, /category/all(String)
+2020-06-02 15:56:00.378 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.mapper.HistoryMapper.insertHistory   : <==    Updates: 1
+2020-06-02 15:56:00.381 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.mapper.CategoryMapper.listCategory   : ==>  Preparing: SELECT `cid`,`uid`,`category`,`gmt_create` FROM `category` 
+2020-06-02 15:56:00.386 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.mapper.CategoryMapper.listCategory   : ==> Parameters: 
+2020-06-02 15:56:00.395 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.mapper.CategoryMapper.listCategory   : <==      Total: 12
+2020-06-02 15:56:00.401 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : ==>  Preparing: SELECT `aid` FROM `association` WHERE `cid` = ? 
+2020-06-02 15:56:00.403 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : ==> Parameters: 1(Integer)
+2020-06-02 15:56:00.420 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : <==      Total: 4
+2020-06-02 15:56:00.420 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : ==>  Preparing: SELECT `aid` FROM `association` WHERE `cid` = ? 
+2020-06-02 15:56:00.421 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : ==> Parameters: 2(Integer)
+2020-06-02 15:56:00.422 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : <==      Total: 3
+2020-06-02 15:56:00.424 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : ==>  Preparing: SELECT `aid` FROM `association` WHERE `cid` = ? 
+2020-06-02 15:56:00.425 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : ==> Parameters: 4(Integer)
+2020-06-02 15:56:00.427 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : <==      Total: 3
+2020-06-02 15:56:00.428 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : ==>  Preparing: SELECT `aid` FROM `association` WHERE `cid` = ? 
+2020-06-02 15:56:00.428 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : ==> Parameters: 6(Integer)
+2020-06-02 15:56:00.429 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : <==      Total: 1
+2020-06-02 15:56:00.429 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : ==>  Preparing: SELECT `aid` FROM `association` WHERE `cid` = ? 
+2020-06-02 15:56:00.430 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : ==> Parameters: 11(Integer)
+2020-06-02 15:56:00.431 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : <==      Total: 4
+2020-06-02 15:56:00.432 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : ==>  Preparing: SELECT `aid` FROM `association` WHERE `cid` = ? 
+2020-06-02 15:56:00.433 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : ==> Parameters: 14(Integer)
+2020-06-02 15:56:00.438 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : <==      Total: 4
+2020-06-02 15:56:00.439 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : ==>  Preparing: SELECT `aid` FROM `association` WHERE `cid` = ? 
+2020-06-02 15:56:00.439 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : ==> Parameters: 16(Integer)
+2020-06-02 15:56:00.441 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : <==      Total: 3
+2020-06-02 15:56:00.441 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : ==>  Preparing: SELECT `aid` FROM `association` WHERE `cid` = ? 
+2020-06-02 15:56:00.442 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : ==> Parameters: 21(Integer)
+2020-06-02 15:56:00.444 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : <==      Total: 1
+2020-06-02 15:56:00.444 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : ==>  Preparing: SELECT `aid` FROM `association` WHERE `cid` = ? 
+2020-06-02 15:56:00.444 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : ==> Parameters: 22(Integer)
+2020-06-02 15:56:00.445 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : <==      Total: 7
+2020-06-02 15:56:00.445 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : ==>  Preparing: SELECT `aid` FROM `association` WHERE `cid` = ? 
+2020-06-02 15:56:00.445 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : ==> Parameters: 24(Integer)
+2020-06-02 15:56:00.446 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : <==      Total: 6
+2020-06-02 15:56:00.446 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : ==>  Preparing: SELECT `aid` FROM `association` WHERE `cid` = ? 
+2020-06-02 15:56:00.446 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : ==> Parameters: 25(Integer)
+2020-06-02 15:56:00.447 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : <==      Total: 2
+2020-06-02 15:56:00.447 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : ==>  Preparing: SELECT `aid` FROM `association` WHERE `cid` = ? 
+2020-06-02 15:56:00.447 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : ==> Parameters: 26(Integer)
+2020-06-02 15:56:00.448 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.AssociationMapper.listAidByCid     : <==      Total: 5
+2020-06-02 15:56:00.450 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : ==>  Preparing: SELECT `aid`,`uid`,`title`,`markdown`,`html`,`gmt_post`,`view` FROM `article` WHERE `aid` in ( ? ) ORDER BY gmt_post DESC 
+2020-06-02 15:56:00.452 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : ==> Parameters: 88(Integer)
+2020-06-02 15:56:00.454 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : <==      Total: 1
+2020-06-02 15:56:00.455 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : ==>  Preparing: SELECT `aid`,`uid`,`title`,`markdown`,`html`,`gmt_post`,`view` FROM `article` WHERE `aid` in ( ? , ? , ? , ? ) ORDER BY gmt_post DESC 
+2020-06-02 15:56:00.455 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : ==> Parameters: 90(Integer), 91(Integer), 92(Integer), 96(Integer)
+2020-06-02 15:56:00.457 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : <==      Total: 4
+2020-06-02 15:56:00.458 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : ==>  Preparing: SELECT `aid`,`uid`,`title`,`markdown`,`html`,`gmt_post`,`view` FROM `article` WHERE `aid` in ( ? , ? , ? , ? , ? , ? , ? ) ORDER BY gmt_post DESC 
+2020-06-02 15:56:00.459 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : ==> Parameters: 108(Integer), 116(Integer), 124(Integer), 125(Integer), 117(Integer), 127(Integer), 128(Integer)
+2020-06-02 15:56:00.461 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : <==      Total: 7
+2020-06-02 15:56:00.462 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : ==>  Preparing: SELECT `aid`,`uid`,`title`,`markdown`,`html`,`gmt_post`,`view` FROM `article` WHERE `aid` in ( ? ) ORDER BY gmt_post DESC 
+2020-06-02 15:56:00.462 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : ==> Parameters: 106(Integer)
+2020-06-02 15:56:00.463 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : <==      Total: 1
+2020-06-02 15:56:00.463 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : ==>  Preparing: SELECT `aid`,`uid`,`title`,`markdown`,`html`,`gmt_post`,`view` FROM `article` WHERE `aid` in ( ? , ? , ? , ? , ? ) ORDER BY gmt_post DESC 
+2020-06-02 15:56:00.464 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : ==> Parameters: 120(Integer), 121(Integer), 122(Integer), 123(Integer), 126(Integer)
+2020-06-02 15:56:00.466 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : <==      Total: 5
+2020-06-02 15:56:00.467 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : ==>  Preparing: SELECT `aid`,`uid`,`title`,`markdown`,`html`,`gmt_post`,`view` FROM `article` WHERE `aid` in ( ? , ? , ? , ? ) ORDER BY gmt_post DESC 
+2020-06-02 15:56:00.467 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : ==> Parameters: 86(Integer), 89(Integer), 85(Integer), 80(Integer)
+2020-06-02 15:56:00.471 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : <==      Total: 4
+2020-06-02 15:56:00.472 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : ==>  Preparing: SELECT `aid`,`uid`,`title`,`markdown`,`html`,`gmt_post`,`view` FROM `article` WHERE `aid` in ( ? , ? , ? ) ORDER BY gmt_post DESC 
+2020-06-02 15:56:00.472 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : ==> Parameters: 82(Integer), 85(Integer), 80(Integer)
+2020-06-02 15:56:00.475 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : <==      Total: 3
+2020-06-02 15:56:00.475 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : ==>  Preparing: SELECT `aid`,`uid`,`title`,`markdown`,`html`,`gmt_post`,`view` FROM `article` WHERE `aid` in ( ? , ? , ? , ? , ? , ? ) ORDER BY gmt_post DESC 
+2020-06-02 15:56:00.475 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : ==> Parameters: 111(Integer), 112(Integer), 113(Integer), 114(Integer), 115(Integer), 118(Integer)
+2020-06-02 15:56:00.477 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : <==      Total: 6
+2020-06-02 15:56:00.477 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : ==>  Preparing: SELECT `aid`,`uid`,`title`,`markdown`,`html`,`gmt_post`,`view` FROM `article` WHERE `aid` in ( ? , ? , ? ) ORDER BY gmt_post DESC 
+2020-06-02 15:56:00.478 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : ==> Parameters: 83(Integer), 84(Integer), 80(Integer)
+2020-06-02 15:56:00.479 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : <==      Total: 3
+2020-06-02 15:56:00.479 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : ==>  Preparing: SELECT `aid`,`uid`,`title`,`markdown`,`html`,`gmt_post`,`view` FROM `article` WHERE `aid` in ( ? , ? ) ORDER BY gmt_post DESC 
+2020-06-02 15:56:00.479 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : ==> Parameters: 119(Integer), 124(Integer)
+2020-06-02 15:56:00.480 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : <==      Total: 2
+2020-06-02 15:56:00.480 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : ==>  Preparing: SELECT `aid`,`uid`,`title`,`markdown`,`html`,`gmt_post`,`view` FROM `article` WHERE `aid` in ( ? , ? , ? , ? ) ORDER BY gmt_post DESC 
+2020-06-02 15:56:00.481 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : ==> Parameters: 90(Integer), 91(Integer), 92(Integer), 96(Integer)
+2020-06-02 15:56:00.482 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : <==      Total: 4
+2020-06-02 15:56:00.483 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : ==>  Preparing: SELECT `aid`,`uid`,`title`,`markdown`,`html`,`gmt_post`,`view` FROM `article` WHERE `aid` in ( ? , ? , ? ) ORDER BY gmt_post DESC 
+2020-06-02 15:56:00.484 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : ==> Parameters: 78(Integer), 79(Integer), 97(Integer)
+2020-06-02 15:56:00.487 DEBUG 5588 --- [http-nio-8081-exec-10] c.h.m.A.listArticleByAidList             : <==      Total: 3
+2020-06-02 15:56:03.960 DEBUG 5588 --- [http-nio-8081-exec-9] c.h.mapper.HistoryMapper.insertHistory   : ==>  Preparing: INSERT INTO `history`(`ip`,`location`,`uid`,`description`,`gmt_record`) VALUES (?, ?,?,?,NOW()) 
+2020-06-02 15:56:03.960 DEBUG 5588 --- [http-nio-8081-exec-9] c.h.mapper.HistoryMapper.insertHistory   : ==> Parameters: 127.0.0.1(String), ["本机地址","本机地址","","",""](String), null, /article/display/127(String)
+2020-06-02 15:56:04.000 DEBUG 5588 --- [http-nio-8081-exec-9] c.h.mapper.HistoryMapper.insertHistory   : <==    Updates: 1
+2020-06-02 15:56:04.001 DEBUG 5588 --- [http-nio-8081-exec-9] c.h.m.ArticleMapper.getArticleByAid      : ==>  Preparing: SELECT `aid`,`uid`,`title`,`markdown`,`html`,`gmt_post`,`view` FROM `article` WHERE `aid` = ? 
+2020-06-02 15:56:04.001 DEBUG 5588 --- [http-nio-8081-exec-9] c.h.m.ArticleMapper.getArticleByAid      : ==> Parameters: 127(Integer)
+2020-06-02 15:56:04.002 DEBUG 5588 --- [http-nio-8081-exec-9] c.h.m.ArticleMapper.getArticleByAid      : <==      Total: 1
+2020-06-02 15:56:04.002 DEBUG 5588 --- [http-nio-8081-exec-9] c.h.mapper.CategoryMapper.listCategory   : ==>  Preparing: SELECT `cid`,`uid`,`category`,`gmt_create` FROM `category` 
+2020-06-02 15:56:04.002 DEBUG 5588 --- [http-nio-8081-exec-9] c.h.mapper.CategoryMapper.listCategory   : ==> Parameters: 
+2020-06-02 15:56:04.003 DEBUG 5588 --- [http-nio-8081-exec-9] c.h.mapper.CategoryMapper.listCategory   : <==      Total: 12
+2020-06-02 15:56:04.004 DEBUG 5588 --- [http-nio-8081-exec-9] c.h.m.AssociationMapper.listCidByAid     : ==>  Preparing: SELECT `cid` FROM `association` WHERE `aid` = ? 
+2020-06-02 15:56:04.004 DEBUG 5588 --- [http-nio-8081-exec-9] c.h.m.AssociationMapper.listCidByAid     : ==> Parameters: 127(Integer)
+2020-06-02 15:56:04.004 DEBUG 5588 --- [http-nio-8081-exec-9] c.h.m.AssociationMapper.listCidByAid     : <==      Total: 1
+2020-06-02 15:56:04.005 DEBUG 5588 --- [http-nio-8081-exec-9] c.h.m.CategoryMapper.listCategoryByCid   : ==>  Preparing: SELECT `cid`,`uid`,`category`,`gmt_create` FROM `category` WHERE `cid` IN ( ? ) 
+2020-06-02 15:56:04.005 DEBUG 5588 --- [http-nio-8081-exec-9] c.h.m.CategoryMapper.listCategoryByCid   : ==> Parameters: 22(Integer)
+2020-06-02 15:56:04.006 DEBUG 5588 --- [http-nio-8081-exec-9] c.h.m.CategoryMapper.listCategoryByCid   : <==      Total: 1
+2020-06-02 15:56:04.006 DEBUG 5588 --- [http-nio-8081-exec-9] com.heng.mapper.ArticleMapper.viewMost   : ==>  Preparing: SELECT `aid`,`uid`,`title`,`markdown`,`html`,`gmt_post`,`view` FROM `article` ORDER BY `view` DESC LIMIT ? 
+2020-06-02 15:56:04.006 DEBUG 5588 --- [http-nio-8081-exec-9] com.heng.mapper.ArticleMapper.viewMost   : ==> Parameters: 5(Integer)
+2020-06-02 15:56:04.008 DEBUG 5588 --- [http-nio-8081-exec-9] com.heng.mapper.ArticleMapper.viewMost   : <==      Total: 5

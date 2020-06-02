@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" th:href="@{/images/badblog.ico}">
+    <title>首页</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>
+    <style type="text/css">
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        body {
+            padding-bottom: 70px;
+            margin-bottom: 60px;
+            padding-top: 70px;
+        }
+
+        .title {
+            position: relative;
+        }
+
+        .title:hover, .title:visited, .title:active, .title:link {
+            text-decoration: none;
+        }
+
+        .title:after {
+            content: "";
+            width: 0;
+            height: 2px;
+            background-color: green;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            -webkit-transition: all 0.8s;
+            -moz-transition: all 0.8s;
+            -ms-transition: all 0.8s;
+            -o-transition: all 0.8s;
+            transition: all 0.8s;
+        }
+
+        .title:hover:after {
+            left: 0%;
+            width: 100%;
+        }
+
+        .content {
+            max-height: 100px;
+            text-overflow: ellipsis;
+        }
+
+        .btn-lg {
+            border: 1px solid #555;
+        }
+
+        .btn-lg:hover {
+            color: white;
+            background-color: #000;
+        }
+
+        .jumbotron:hover {
+            box-shadow: 5px 5px 10px #888;
+        }
+
+
+    </style>
+</head>
+<body>
+<header th:include="common/navbar"></header>
+
+<div class="container" th:if="${ #lists.size(articleList) == 0 }" th:include="common/blank"></div>
+
+<div class="container" th:unless="${ #lists.size(articleList) == 0 }">
+    <div class="row">
+
+        <div class="col-md-9">
+
+            <!--
+
+                显示文章
+
+            -->
+            <div class="jumbotron" th:each="article : ${articleList}">
+                <h3 th:inline="text">
+                    <a class="title"  th:href="@{'/article/display/' + ${article.aid} }"  th:text="${article.title}"
+                       th:onclick="'javascript:addView('+ ${article.aid} + ')'">
+                    </a>
+                </h3>
+                <br>
+                <p class="content" th:utext="${article.html}"></p>
+                <br>
+                <p>
+                    <a class="btn btn-default btn-lg" th:href="@{'/article/display/' + ${article.aid} }"
+                       th:onclick="'javascript:addView('+${article.aid}+')'">
+                        阅读全文
+                    </a>
+
+                    <span style="float: right;" th:inline="text">
+                        <span class="label label-default ">
+                            <span class="glyphicon glyphicon-eye-open"></span>
+                            [[${article.view}]]
+                        </span>
+                        &nbsp;&nbsp;
+                        <span class="label label-default ">
+                            <span class="glyphicon glyphicon-time"></span>
+                            [[${#dates.format(article.gmtPost,"YYYY-MM-dd HH:mm:ss")}]]
+                        </span>
+                    </span>
+                </p>
+            </div>
+
+
+            <!--
+
+                分页
+
+            -->
+            <div>
+                <nav aria-label="Page navigation">
+                    <ul class="pagination pagination-lg">
+                        <li th:if="${page.hasPrePage}">
+                            <a th:href="@{'/p/' + ${ page.currentPage - 1} }" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/p/1">首页</a>
+                        </li>
+
+                        <li th:each="p : ${#numbers.sequence( (page.totalPage - page.currentPage < 7) ? (page.totalPage - 7 > 0 ? page.totalPage - 7:1) :page.currentPage , page.currentPage + 7 < page.totalPage ? page.currentPage + 7 : page.totalPage )}"
+                            th:class="${p == page.currentPage ? 'active' :''  }">
+                            <a th:href="@{'/p/' + ${p} }" th:text="${p}"></a>
+                        </li>
+
+                        <li>
+                            <a th:href="@{ '/p/' +${page.totalPage} }">尾页</a>
+                        </li>
+
+                        <li th:if="${page.hasNextPage}">
+                            <a th:href="@{'/p/' + ${ page.currentPage + 1} }" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+
+        </div>
+
+        <!--
+
+            阅读排行榜
+
+        -->
+        <div class="col-md-3">
+            <div style="position: fixed;width: 20%;">
+
+
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-success ">
+                        <span class="glyphicon glyphicon-star"></span> &nbsp;阅读排行榜
+                    </li>
+                    <li class="list-group-item " th:each="article : ${mostView}" th:inline="text">
+                        <span class="badge" th:inline="text">
+                            ([[${article.view}]])
+                        </span>
+                        <a th:href="@{'/article/display/' + ${article.aid} }" th:text="${article.title}"
+                           data-toggle="tooltip" data-placement="top" th:title="${article.title}"
+                           th:onclick="'javascript:addView('+ ${article.aid} + ')'">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<footer th:include="common/footer"
+        style=" position: absolute;bottom: 0;width: 100%;height: 60px;background-color: #99979c;"></footer>
+<script th:src="@{/jquery.min.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+<script th:src="@{/js/badblog.js}"></script>
+
+</body>
+</html>
